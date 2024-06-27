@@ -1,3 +1,30 @@
-<div class="table-details-container">
+<div *ngIf="selectedRecord" class="table-details-container">
 
+  <div id="left-padding-box"></div>
+
+  <div id="icon-box">
+    <mat-icon class="icon account-icon">account_circle</mat-icon>
+  </div>
+
+  <div id="name-box">
+    <div class="name-header"><b>{{ selectedRecord.FirstName }} {{ selectedRecord.LastName }}</b></div>
+    <div class="cell">{{ selectedRecord.NickName }}</div>
+  </div>
+
+  <div id="age-box">
+    <div class="descriptor-header"><b>Age</b></div>
+    <div class="cell">{{ selectedRecord.Age }}</div>
+  </div>
+
+  <div id="pin-box">
+    <div class="descriptor-header"><b>Pin</b></div>
+    <div class="cell">{{ selectedRecord.PinCode }}</div>
+  </div>
+
+  <div id="location-box">
+    <div class="descriptor-header"><b>Location</b></div>
+    <div class="cell">{{ selectedRecord.City }} {{ selectedRecord.State }}, {{ selectedRecord.Country }}</div>
+  </div>
+
+  <div id="right-padding-box"></div>
 </div>

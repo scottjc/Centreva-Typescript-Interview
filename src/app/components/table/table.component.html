@@ -1,3 +1,17 @@
 <div class="table-container">
-
+  <div id="table-title"><b>Customer Table</b></div>
+  <section id="table-contents">
+    <header>
+      <div class="col">First Name</div>
+      <div class="col">Last Name</div>
+      <div class="col">Age</div>
+      <div class="col">Details</div>
+    </header>
+    <div *ngFor="let record of sortByAge()">
+      <div class="col">{{ record.FirstName }}</div>
+      <div class="col">{{ record.LastName }}</div>
+      <div class="col">{{ record.Age }}</div>
+      <div class="col"><button (click)="recordSelected.emit(record)">View Details</button></div>
+    </div>
+  </section>
 </div>

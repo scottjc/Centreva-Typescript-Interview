@@ -1,3 +1,5 @@
 <app-header></app-header>
 
-<app-table></app-table>
+<app-table (recordSelected)="populateRecord($event)"></app-table>
+
+<app-table-details [selectedRecord]="selectedRecord"></app-table-details>

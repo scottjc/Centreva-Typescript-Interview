@@ -1,3 +1,71 @@
 .table-details-container {
-    
+  margin: 3% 0 0 0;
+  padding: 3% 0 3% 0;
+  display: flex;
+
+  border: 1px var(--cen-primary);
+  border-style: solid none;
+}
+
+.account-icon {
+  color: lightgrey;
+  transform: scale(4);
+}
+
+.name-header {
+  font-size: 16px;
+  color: black;
+}
+
+.descriptor-header {
+  font-size: 16px;
+  color: var(--cen-primary-light);
+}
+
+.cell {
+  color: grey;
+}
+
+#left-padding-box {
+  flex: 3;
+}
+
+#icon-box {
+  flex: 4;
+}
+
+#name-box {
+  flex: 19;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#age-box {
+  flex: 19;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#pin-box {
+  flex: 19;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#location-box {
+  flex: 19;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#right-padding-box {
+  flex: 17;
 }

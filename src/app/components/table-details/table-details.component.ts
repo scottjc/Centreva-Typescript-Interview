@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import {CUSTOMER_RECORDS, CustomerRecord} from "../../constants/customer-records";
 
 @Component({
   selector: 'app-table-details',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./table-details.component.scss']
 })
 export class TableDetailsComponent implements OnInit {
+
+
+  @Input() selectedRecord: CustomerRecord | undefined;
 
   constructor() { }
 
